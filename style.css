@@ -1,0 +1,33 @@
+body {
+    background-color: #ffffff;
+}
+
+.bottombar h1, h2{
+    top: 50vw;
+    left: 10vw;
+    display: inline-block;
+    margin-right: 270px;
+    position: relative;
+    font-family: "Atlas Grotesk";
+    
+}
+
+.narrativebox {
+    border: 2px blue solid;
+    width: 90%;
+    height: 60%;
+    position: absolute;
+    margin: auto;
+    left: 65px;
+    overflow-y: scroll;
+}
+
+#zone1narrative {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Merriweather",serif ;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.8em;
+}
