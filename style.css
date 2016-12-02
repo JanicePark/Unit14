@@ -30,9 +30,12 @@ body {
     font-weight: bold;
     font-size: 40px;
     line-height: 1.8em;
+<<<<<<< HEAD
 }
 
 .resize {
     width: 100px;
     height: auto;
+=======
+>>>>>>> origin/master
 }
