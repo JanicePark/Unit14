@@ -1,10 +1,10 @@
 body {
-    background-color: #ffffff;
+    background-color: #EBF7FF;
 }
 
 .bottombar h1, h2{
-    top: 50vw;
-    left: 10vw;
+    top: 900px;
+    left: 15%;
     display: inline-block;
     margin-right: 270px;
     position: relative;
@@ -13,13 +13,14 @@ body {
 }
 
 .narrativebox {
-    border: 2px blue solid;
+/*    border: 2px blue solid;*/
     width: 90%;
     height: 60%;
     position: absolute;
     margin: auto;
     left: 65px;
     overflow-y: scroll;
+    background-color: #EEFFF0;
 }
 
 #zone1narrative {
@@ -39,3 +40,13 @@ body {
 =======
 >>>>>>> origin/master
 }
+
+@media all and (max-width: 830px) {
+    h1 {}
+
+    h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;}
+}
+
+@media all and (min-width: 1000px) {
