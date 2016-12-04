@@ -1,0 +1,60 @@
+<html>
+<header>
+
+<title>Tips for International Students</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script type="text/javascript" src="jquery-3.1.1.js"> </script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <script src="https://use.typekit.net/avc8mam.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    
+</header>
+<body>
+    
+    <div id = "background1"></div>
+
+    <div class ="bottombar">
+        <h2> Life In Providence </h2>
+        <h2> Let's Talk! </h2>
+        <h2> Staying Healthy </h2>
+        <h2> Work Life </h2>
+    </div>
+
+    <div class = "narrativebox">
+
+        <p id = "zone1narrative"> Welcome to the US! You have had a long flight. There are several ways to reach Providence, RI from your airport. You can take the Amtrak train, or buses like Peter Pan and Greyhound, or RIPTA bus routes 14 and 20. The bus trip usually takes about 90 minutes <a id = "bushover"> <img class = "resize" src = "icons/bus-12.png"></img> </a> <span class = "caption"> Yuexin, China, Graphic Design</span>. Once you’re here, take some time to relax and settle in! Walk around downtown to find some great restaurants (building icon - HJ). Remember to tip around 15% if you're dining! Just a 15 min. trip from RISD is the Providence Place Mall, where you can buy dorm supplies, settle your mobile plan, eat at the food court, and watch movies (shopping bag icon - Tracey). Cafes are a nice place to hang out with friends - grab coffee from Small Point Cafe, New Harvest, Dave’s Coffee, or RISD’s own student-run Carr Haus cafe. Then circle up to Brown University and Thayer Street where you can find food trucks, late-night eateries, and quaint shops. (cutlery/food icon - HJ) Over the next few years, you will discover more places to enjoy in your new home.
+    </p>
+        
+</div>
+    
+    <div class ="video">
+    <video width="500" height="300" controls>
+        <source src="video/yuexin.mp4"></video></div>
+    
+    <script>
+        $(function(){
+            $("#bushover").click(function(e){
+                e.stopPropagation();
+                $(".video").toggle();
+                $(".video").get(0).play();
+                return false;
+            });
+        $("body").click(function(){
+            $(".video").toggle();
+//            var video = $("#video").attr("src");
+//            $("#video").attr("src","");
+//            $("#video").attr("src",video);
+        });    
+        });
+    </script>
+    
+    
+</body>
+</html>
