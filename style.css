@@ -23,8 +23,7 @@ a {
     top: 70px;
 }
 
-.bottombar h1,
-h2 {
+.bottombar h2 {
     font-size: 14px;
     color: black;
     float: left;
@@ -36,11 +35,67 @@ h2 {
     padding: 5px 10px 4px 15px;
     margin-bottom: -5px;
     letter-spacing: 2px;
-    line-height: 23px;
+    line-height: 20px;
     width: 100px;
 }
 
+.bottombar h2:hover {
+    background: yellow;
+    color: black;
+    
+}
 
+.bottombar h2.activepage {
+    background:yellow;
+    color: black;
+}
+
+.prevbar {
+    position: absolute;
+    left: -10px;
+    top: 585px;
+    width: 50px;
+    height: 120px;
+    
+}
+
+.previous{
+    font-size: 18px;
+    color: black;
+    font-family: "Skolar Sans Latin";
+    background: #B2FAF3;
+    color: black;
+    padding: 5px 10px 4px 25px;
+    letter-spacing: 2px;
+    line-height: 20px;
+
+}
+
+.nextbar {
+    position: absolute;
+    right: -10px;
+    top: 585px;
+    width: 50px;
+    height: 120px;
+    margin-right: 10px;
+}
+
+.next{
+    text-align: right;
+    font-size: 18px;
+    color: black;
+    font-family: "Skolar Sans Latin";
+    background: #b1efec;
+    color: black;
+    padding: 5px 25px 4px 10px;
+    letter-spacing: 2px;
+    line-height: 20px;
+
+}
+
+.next {
+    
+}
 
 /*
 .caption {  
