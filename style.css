@@ -1,8 +1,11 @@
-body {
+body {}
+
+a{
+    text-decoration: none;
 }
 
 #background1 {
-    position:absolute;
+    position: absolute;
     width: 102%;
     height: 102%;
     top: -10px;
@@ -10,26 +13,26 @@ body {
     background-color: #b1efec;
 }
 
-.bottombar{
-/*    border: 2px blue solid;*/
+.bottombar {
+    /*    border: 2px blue solid;*/
     position: absolute;
-    width: 90%;
+    left: 150px;
     height: 70px;
-    left: 225px;
-    bottom: 50px;
+    bottom:10px;
 }
 
-.bottombar h1, h2{
+.bottombar h1,
+h2 {
     color: black;
     margin-right: 140px;
     float: left;
     font-family: "Skolar Sans Latin";
     position: relative;
-    
 }
 
-.caption {
-    display:none;
+
+/*
+.caption {  
     position: absolute;
     top: 278px;
     left: 571px;
@@ -43,34 +46,42 @@ body {
     float: left;
     line-height: 30px;
     text-align: center;
+}
+*/
 
+
+.wrapper .text {
+    position: absolute;
+    bottom:135px;
+    left: 50px;
+    visibility: hidden;
+    font-size: 15px;
+    color: white;
 }
 
-#bushover:hover + .caption {
+.wrapper:hover .text {
+    visibility: visible;
+}
+img {
     display: block;
 }
 
-span {
-    width:100px;
-    height: 100px;
-}
-
-
-.video {
+#imgpreview {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    top: 55px;
+    left: 35px;
+    z-index: 3;
     display: none;
-    width: 500px;
-    height: 300px;
-    position: fixed;
-    top: 28%;
-    left: 30%;
-    border: none;
-    background: white;
-    z-index: 1;
 }
 
+.ui-widget.dialog {
+    
+}
 
 .narrativebox {
-/*    border: 2px blue solid;*/
+    /*    border: 2px blue solid;*/
     width: 90%;
     height: 550px;
     top: 100px;
@@ -85,7 +96,7 @@ span {
     padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
-    font-family: "Merriweather",serif ;
+    font-family: "Merriweather", serif;
     font-weight: bold;
     font-size: 40px;
     line-height: 1.8em;
@@ -95,7 +106,7 @@ span {
     padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
-    font-family: "Merriweather",serif ;
+    font-family: "Merriweather", serif;
     font-weight: bold;
     font-size: 40px;
     line-height: 1.8em;
@@ -108,15 +119,14 @@ span {
 
 @media all and (max-width: 500px) {
     .bottombar {
-    width: 70%;
-    left: 50px;
-    height: 250px;
-    top: 720px;
+        width: 70%;
+        left: 50px;
+        height: 250px;
+        top: 720px;
     }
-    
     h2 {
-    text-align: center;
-    margin-bottom: -10px;
-    padding-left: 100px;
+        text-align: center;
+        margin-bottom: -10px;
+        padding-left: 100px;
     }
 }
