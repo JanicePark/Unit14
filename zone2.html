@@ -1,32 +1,112 @@
 <html>
 <header>
 
-<title>Tips for International Students</title>
+    <title>Tips for International Students</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"> </script>
+
+    <script type="text/javascript" src="jquery-3.1.1.js">
+    </script>
+
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-    
+    <script src="https://use.typekit.net/avc8mam.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
 </header>
-    
-<body>
-<div class ="bottombar">
-    <h2> Life In Providence </h2>
-    <h2> Let's Talk! </h2>
-    <h2> Staying Healthy </h2>
-    <h2> Work Life </h2>
+
+
+<div id="background1"></div>
+
+<div class="bottombar">
+    <a href="zone1.html">
+        <h2> Life In Providence </h2>
+    </a>
+    <a href="zone2.html">
+        <h2> Let's Talk! </h2>
+    </a>
+    <a href="zone3.html">
+        <h2> Staying Healthy </h2>
+    </a>
+    <a href="zone4.html">
+        <h2> Work Life </h2>
+    </a>
 </div>
 
-<div class = "narrativebox">
+<div class="narrativebox">
 
-<p id = "zone1narrative"> Many will greet you casually and ask “How are you doing?” It is usually pleasantry to just say “fine,” “great,” or "very well, thank you.” <span> <img class = "resize"; img src = "icons/hand.png"> </span> Several will shake hands when you meet someone for the  rst time. “See you later” is usually an expres- sion. Don’t be o ended if people say this even if they never end up seeing you again. We usually don’t hug people when we greet each other for the  rst time. Maybe a er spending a few hours with that person you can give a casual hug. Classroom scene Tipping Teachers will encourage you to speak up or volunteer. Sometimes they may end up asking you to do so instead.  ey encourage stu- dents to talk and participate. American will tip 15% or more of the bill (or to calculate quickly, twice the tax amount) when dining in a restaurant. They may tip at a bar. Otherwise, if you’re at a cafe or getting food togo, you don’t need to tip.
-</p>
+    <div id="zone1narrative">
+
+        Americans will casually greet you and ask, “How are you doing?” A good way to respond would be with “fine”, “great”, “I’m good, how are you?” or “Very well, thank you!”
+        
+         <div class="wrapper">
+            <img src="icons/hand.png" class="resize">
+            <p class="text">Yuexin, China | Graphic Design</p>
+        </div>
+        
+        Sometimes you shake hands with someone you meet for the first time. Don’t be offended when people say, “See you later,” even though you may end up never seeing them again—it’s just an expression. We usually don’t hug people either when we greet each other for the first time; maybe after spending a few hours together, you can give a casual hug. In class, teachers will encourage you to speak up in critique or volunteer for demonstrations. Class participation is a huge part of American education. (Pushpin icon - KxJoe critique) This may be difficult at first, but practice makes perfect, and it will get easier as you become more familiar with your peers.
+
+    </div>
+    <div id="zone2narrative">
+        Since the US is so diverse, people from different regions have distinct accents and customs (Lip icon - KxJoe ‘Hut’). Students are driven by their own goals and enjoy a wide range of activities. (Sketchbook icon - TTIN recreational activities, music). You will see several cultural festivals celebrated on campus (Firework icon - TTIN festivals). Also, most students here hold liberal views (Rainbow icon - KXJA hometown) and you may encounter unfamiliar identities and perspectives. (Sexuality icons - TTIN Sexuality) Approach these with an open mind and understand that everyone has their own reasons for their beliefs, but they are open to hear what others around the world think of them (Globe icon - KXJA impression). Don’t hesitate to engage in conversation! You have more in common than you think.
+    </div>
+
 </div>
-    
-    
+
+<div class="penname"></div>
+
+<script type="text/javascript">
+    $(function() {
+        $("#dialog").dialog({
+            modal: true,
+            autoOpen: false,
+            title: "jQuery Dialog",
+            width: 540,
+            height: 360
+        });
+        $("#btnShow").click(function() {
+            $('#dialog').dialog('open');
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        $("#dialog").dialog({
+            modal: true,
+            autoOpen: false,
+            title: "Advice from Yuexin:",
+        });
+
+        $(".resize").click(function() {
+            $('#dialog').dialog('open');
+            $("#videoYX").trigger("play");
+        });
+
+        $("button").click(function() {
+            $("#videoYX").trigger("pause");
+        });
+
+    })
+</script>
+
+
 </body>
+
 </html>

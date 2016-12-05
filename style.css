@@ -12,25 +12,34 @@ a {
     height: 102%;
     top: -10px;
     left: -10px;
-    background: #b1efec;
+    color: white;
 }
 
 .bottombar {
     /*    border: 2px blue solid;*/
     position: absolute;
-    left: 150px;
-    height: 70px;
-    bottom: 10px;
+    left: 0px;
+    height: 400px;
+    top: 70px;
 }
 
 .bottombar h1,
 h2 {
+    font-size: 14px;
     color: black;
-    margin-right: 140px;
     float: left;
+    clear: both;
     font-family: "Skolar Sans Latin";
     position: relative;
+    background: black;
+    color: white;
+    padding: 5px 10px 4px 15px;
+    margin-bottom: -5px;
+    letter-spacing: 2px;
+    line-height: 23px;
+    width: 100px;
 }
+
 
 
 /*
@@ -95,10 +104,10 @@ img {
 
 .narrativebox {
     /*    border: 2px blue solid;*/
-    width: 90%;
-    height: 520px;
+    width: 78%;
+    height: 620px;
     top: 100px;
-    left: 5vw;
+    left: 11%;
     position: absolute;
     margin: auto;
     overflow-y: scroll;
@@ -111,7 +120,7 @@ img {
     padding-right: 50px;
     font-family: "Merriweather", serif;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 1.8em;
 }
 
@@ -121,13 +130,27 @@ img {
     padding-right: 50px;
     font-family: "Merriweather", serif;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 1.8em;
 }
 
 .resize {
     width: 100px;
     height: auto;
+}
+
+.resizegif {
+    width: 90px;
+    height: auto;
+}
+
+.penname {
+    font-family: "Merriweather", serif;
+    right: 180px;
+    bottom: 10px;
+    position: absolute;
+    color: black;
+    
 }
 
 @media all and (max-width: 500px) {
