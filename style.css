@@ -1,6 +1,6 @@
 body {}
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -18,7 +18,7 @@ a{
     position: absolute;
     left: 150px;
     height: 70px;
-    bottom:10px;
+    bottom: 10px;
 }
 
 .bottombar h1,
@@ -49,10 +49,9 @@ h2 {
 }
 */
 
-
 .wrapper .text {
     position: absolute;
-    bottom:135px;
+    bottom: 135px;
     left: 50px;
     visibility: hidden;
     font-size: 15px;
@@ -62,6 +61,7 @@ h2 {
 .wrapper:hover .text {
     visibility: visible;
 }
+
 img {
     display: block;
 }
@@ -77,7 +77,8 @@ img {
 }
 
 .ui-widget.dialog {
-    
+    width: 300px;
+    height: 500px;
 }
 
 .narrativebox {
