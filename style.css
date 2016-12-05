@@ -1,4 +1,6 @@
-body {}
+body {
+    overflow: hidden;
+}
 
 a {
     text-decoration: none;
@@ -10,7 +12,7 @@ a {
     height: 102%;
     top: -10px;
     left: -10px;
-    background-color: #b1efec;
+    background: #b1efec;
 }
 
 .bottombar {
@@ -49,16 +51,31 @@ h2 {
 }
 */
 
+.wrapper {
+    width:auto;
+    margin-bottom: -10px;
+    display: inline-block;
+}
+
+.wrapper p {
+        position: absolute;
+}
+
 .wrapper .text {
-    position: absolute;
-    bottom: 135px;
     left: 50px;
     visibility: hidden;
-    font-size: 15px;
-    color: white;
+    font-size: 22px;
+    color: black;
+    height:auto; 
+    background: white;
+    line-height: 1em;
+    padding: 14px;
+    border-radius: 5px;
 }
 
 .wrapper:hover .text {
+    top: 214;
+    left: 562;
     visibility: visible;
 }
 
@@ -76,15 +93,10 @@ img {
     display: none;
 }
 
-.ui-widget.dialog {
-    width: 300px;
-    height: 500px;
-}
-
 .narrativebox {
     /*    border: 2px blue solid;*/
     width: 90%;
-    height: 550px;
+    height: 520px;
     top: 100px;
     left: 5vw;
     position: absolute;
@@ -130,4 +142,8 @@ img {
         margin-bottom: -10px;
         padding-left: 100px;
     }
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }

@@ -22,8 +22,11 @@
     </script>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
-    <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
 </header>
@@ -50,56 +53,55 @@
 
     <div id="zone1narrative">
 
-        Welcome to the US! You have had a long flight. There are several ways to reach Providence, RI from your airport. You can take the Amtrak train, or buses like Peter Pan and Greyhound, or RIPTA bus routes 14 and 20. The bus trip usually takes about 90 minutes.
+        Welcome to the US! You have had a long flight. There are several ways to reach Providence, RI from your airport. You can take the Amtrak train, or buses like Peter Pan and Greyhound, or RIPTA bus routes 14 and 20. The bus trip usually takes about 90 minutes. 
+        <div class="wrapper">
+            <img src="icons/bus-12.png" class="resize">
+            <p class="text">Yuexin, China | Graphic Design</p>
+        </div>
+        <div id="dialog" title="Yuexin, China" style="display: none" align="center">
+            <video id="videoYX" width="500" height="300" controls>
+        <source src="video/yuexin.mp4" type="video/mp4">
+        </video>
+        </div>Once you’re here, take some time to relax and settle in! Walk around downtown to find some great restaurants (building icon - HJ). Remember to tip around 15% if you're dining! Just a 15 min. trip from RISD is the Providence Place Mall, where you can buy dorm supplies, settle your mobile plan, eat at the food court, and watch movies (shopping bag icon - Tracey). Cafes are a nice place to hang out with friends - grab coffee from Small Point Cafe, New Harvest, Dave’s Coffee, or RISD’s own student-run Carr Haus cafe. Then circle up to Brown University and Thayer Street where you can find food trucks, late-night eateries, and quaint shops. (cutlery/food icon - HJ) Over the next few years, you will discover more places to enjoy in your new home.
+    </div>
 
-        <script type="text/javascript">
+</div>
+
+      <script type="text/javascript">
             $(function() {
                 $("#dialog").dialog({
                     modal: true,
                     autoOpen: false,
                     title: "jQuery Dialog",
-                    width: 300,
-                    height: 150
+                    width: 540,
+                    height: 360
                 });
                 $("#btnShow").click(function() {
                     $('#dialog').dialog('open');
                 });
             });
         </script>
-
-        <div class="wrapper">
-            <img src="icons/bus-12.png" class="resize">
-            <p class="text">Yuexin, Graphic Design</p>
-        </div>
-
-        <div id="dialog" style="display: none" align="center">
-            <video id="testquery" width="500" height="300" controls>
-        <source src="video/yuexin.mp4" type="video/mp4">
-        </video>
-        </div>
-
+    
         <script type="text/javascript">
             $(function() {
                 $("#dialog").dialog({
                     modal: true,
                     autoOpen: false,
-                    title: "Yuexin - Graphic Design, China",
-
+                    title: "Advice from Yuexin:",
                 });
-
+                
                 $(".resize").click(function() {
                     $('#dialog').dialog('open');
+                    $("#videoYX").trigger("play");
                 });
-
-
+              
+                 $("button").click(function() {
+                       $("#videoYX").trigger("pause");
             });
+                
+            })
         </script>
-
-        Once you’re here, take some time to relax and settle in! Walk around downtown to find some great restaurants (building icon - HJ). Remember to tip around 15% if you're dining! Just a 15 min. trip from RISD is the Providence Place Mall, where you can buy dorm supplies, settle your mobile plan, eat at the food court, and watch movies (shopping bag icon - Tracey). Cafes are a nice place to hang out with friends - grab coffee from Small Point Cafe, New Harvest, Dave’s Coffee, or RISD’s own student-run Carr Haus cafe. Then circle up to Brown University and Thayer Street where you can find food trucks, late-night eateries, and quaint shops. (cutlery/food icon - HJ) Over the next few years, you will discover more places to enjoy in your new home.
-    </div>
-
-</div>
-
+    
 
 </body>
 
