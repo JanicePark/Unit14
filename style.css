@@ -46,8 +46,10 @@ ul {
 }
 
 .bottombar h2:hover {
-    background: yellow;
+    background: white;
     color: black;
+     border: 2.5px solid black;
+    box-shadow: 10px 10px yellow;
     font-weight: 600;
 }
 
@@ -70,11 +72,20 @@ ul {
     color: black;
     text-align: center;
     font-family: sans-serif;
-    background: #B2FAF3;
+    background: white;
     color: black;
     padding: 5px 10px 4px 25px;
     letter-spacing: 2px;
     line-height: 20px;
+    border: 2.5px solid black;
+}
+
+.previous:hover{
+    background: white;
+    color: black;
+     border: 4px solid black;
+    box-shadow: 10px 10px yellow;
+    font-weight: 600;
 }
 
 .nextbar {
@@ -91,11 +102,20 @@ ul {
     font-size: 18px;
     color: black;
     font-family: sans-serif;
-    background: #b1efec;
+    background: white;
     color: black;
     padding: 5px 25px 4px 10px;
     letter-spacing: 2px;
     line-height: 20px;
+    border: 2.5px solid black;
+}
+
+.next:hover{
+    background: white;
+    color: black;
+    border: 4px solid black;
+    box-shadow: -10px 10px yellow;
+    font-weight: 600;
 }
 
 
