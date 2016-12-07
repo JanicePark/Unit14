@@ -33,8 +33,9 @@ ul {
     color: black;
     float: left;
     clear: both;
-    font-family: "Skolar Sans Latin";
+    font-family: sans-serif;
     position: relative;
+    font-weight: 500;
     background: black;
     color: white;
     padding: 5px 10px 4px 15px;
@@ -47,11 +48,13 @@ ul {
 .bottombar h2:hover {
     background: yellow;
     color: black;
+    font-weight: 600;
 }
 
 .bottombar h2.activepage {
     background: yellow;
     color: black;
+    font-weight: 600;
 }
 
 .prevbar {
@@ -65,7 +68,8 @@ ul {
 .previous {
     font-size: 18px;
     color: black;
-    font-family: "Skolar Sans Latin";
+    text-align: center;
+    font-family: sans-serif;
     background: #B2FAF3;
     color: black;
     padding: 5px 10px 4px 25px;
@@ -83,10 +87,10 @@ ul {
 }
 
 .next {
-    text-align: right;
+    text-align: center;
     font-size: 18px;
     color: black;
-    font-family: "Skolar Sans Latin";
+    font-family: sans-serif;
     background: #b1efec;
     color: black;
     padding: 5px 25px 4px 10px;
@@ -152,14 +156,19 @@ ul {
 .text {
     position: absolute;
     visibility: hidden;
-    font-size: 22px;
+    font-size: 20px;
+    font-family: "Skolar Sans Latin";
+    font-weight: 600;
     color: blue;
     background: white;
+    border: 2px solid blue;
     line-height: 1em;
     padding: 14px;
+    margin-top: 5px;
     border-radius: 5px;
-    width: 250px;
+    width: auto;
     line-height: 1.4em;
+    text-align: left;
 }
 
 #YXwrap:hover .text,
@@ -212,10 +221,10 @@ img {
 
 .narrativebox {
     /*    border: 2px blue solid;*/
-    width: 78%;
+    width: 72%;
     height: 620px;
-    top: 100px;
-    left: 11%;
+    top: 65px;
+    left: 14%;
     position: absolute;
     margin: auto;
     overflow-y: scroll;
@@ -226,20 +235,20 @@ img {
     padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
-    font-family: "Merriweather", serif;
+    font-family: "Merriweather", sans-serif;
     font-weight: bold;
     font-size: 24px;
-    line-height: 1.8em;
+    line-height: 2.5em;
 }
 
 #zone2narrative {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
     font-family: "Merriweather", serif;
     font-weight: bold;
     font-size: 24px;
-    line-height: 1.8em;
+    line-height: 2.5em;
 }
 
 ::-webkit-scrollbar {
@@ -278,91 +287,94 @@ img {
     }
 }
 
-#accountVal {
-    font-family: "skolar sans latin";
-    font-weight: 400;
+#accountVal, #accountVolf, #accountAngel, #accountShivangi, #accountYasemin, #accountPriscilla, #accountIshaan, #accountWill, #accountT, #accountHazel, #accountSyrena, #accountHaejung, #accountJavier{
+    font-family: sans-serif;
+    line-height: 1.35em;
+    font-weight: 500;
+    padding: 20px;
 }
 
 
 /*Zone 1 Icon Styling*/
 
 #bus {
-    width: 70px;
-    height: 50px;
+    width: 60px;
+    height: 45px;
 }
+
+
 
 
 /*Zone 2 Icon Styling*/
 
 #megaphone {
-    width: 70px;
+    width: 65px;
 }
 
 
 /*Zone 3 Icon Styling*/
 
 #blanket {
-    width: 70px;
+    width: 55px;
 }
 
 #juicebox {
-    width: 70px;
+    width: 60px;
 }
 
 #stopsign {
-    width: 70px;
+    width: 55px;
 }
 
 #brokenheart {
-    width: 70px;
+    width: 55px;
 }
 
 #TV {
-    width: 70px;
+    width: 55px;
 }
 
 #flower {
-    width: 65px;
+    width: 55px;
 }
 
 #wall {
-    width: 70px;
+    width: 55px;
 }
 
 #conversation {
-    width: 95px;
+    width: 65px;
 }
 
 #thermometer {
-    width: 70px;
+    width: 55px;
 }
 
 #night {
-    width: 70px;
+    width: 55px;
 }
 
 #hammer {
-    width: 70px;
+    width: 55px;
 }
 
 #alarm {
-    width: 70px;
+    width: 55px;
 }
 
 #telephone {
-    width: 70px;
+    width: 55px;
 }
 
 #microphone {
-    width: 70px;
+    width: 60px;
 }
 
 #formresize {
-    width: 45px;
+    width: 40px;
     height: 50px;
 }
 
-#house {
-    width: 55px;
-    height: 55px;
+#planner {
+    width: 50px;
 }
