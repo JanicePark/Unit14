@@ -42,11 +42,10 @@ a {
 .bottombar h2:hover {
     background: yellow;
     color: black;
-    
 }
 
 .bottombar h2.activepage {
-    background:yellow;
+    background: yellow;
     color: black;
 }
 
@@ -56,10 +55,9 @@ a {
     top: 585px;
     width: 50px;
     height: 120px;
-    
 }
 
-.previous{
+.previous {
     font-size: 18px;
     color: black;
     font-family: "Skolar Sans Latin";
@@ -68,7 +66,6 @@ a {
     padding: 5px 10px 4px 25px;
     letter-spacing: 2px;
     line-height: 20px;
-
 }
 
 .nextbar {
@@ -80,7 +77,7 @@ a {
     margin-right: 10px;
 }
 
-.next{
+.next {
     text-align: right;
     font-size: 18px;
     color: black;
@@ -90,12 +87,8 @@ a {
     padding: 5px 25px 4px 10px;
     letter-spacing: 2px;
     line-height: 20px;
-
 }
 
-.next {
-    
-}
 
 /*
 .caption {  
@@ -115,31 +108,28 @@ a {
 }
 */
 
-.wrapper {
-    width:auto;
+#YXwrap,
+#HJwrap,
+#Rwrap, {
+    width: auto;
     margin-bottom: -10px;
     display: inline-block;
 }
 
-.wrapper p {
-        position: absolute;
-}
-
-.wrapper .text {
-    left: 50px;
+.text {
+    position: absolute;
     visibility: hidden;
     font-size: 22px;
-    color: black;
-    height:auto; 
+    color: red;
     background: white;
     line-height: 1em;
     padding: 14px;
     border-radius: 5px;
 }
 
-.wrapper:hover .text {
-    top: 214;
-    left: 562;
+#YXwrap:hover .text,
+#HJwrap:hover .text,
+#Rwrap:hover .text {
     visibility: visible;
 }
 
@@ -189,9 +179,13 @@ img {
     line-height: 1.8em;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .resize {
-    width: 100px;
-    height: auto;
+    width: 60px;
+    height: 50px;
 }
 
 .resizegif {
@@ -199,14 +193,12 @@ img {
     height: auto;
 }
 
-
 .penname {
     font-family: "Merriweather", serif;
     right: 180px;
     bottom: 10px;
     position: absolute;
     color: black;
-    
 }
 
 @media all and (max-width: 500px) {
@@ -223,15 +215,10 @@ img {
     }
 }
 
-::-webkit-scrollbar { 
-    display: none; 
-}
-
 #accountVal {
     font-family: "skolar sans latin";
     font-weight: 400;
 }
-
 
 
 /*Zone 1 Icon Styling*/
@@ -240,14 +227,12 @@ img {
     width: 70px;
 }
 
+
 /*Zone 2 Icon Styling*/
 
 #megaphone {
     width: 70px;
 }
-
-
-
 
 
 /*Zone 3 Icon Styling*/
