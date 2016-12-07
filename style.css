@@ -15,6 +15,11 @@ a {
     color: white;
 }
 
+ul{
+    padding-right: 220px;
+    padding-left: 100px;
+}
+
 .bottombar {
     /*    border: 2px blue solid;*/
     position: absolute;
@@ -108,7 +113,7 @@ a {
 }
 */
 
-#YXwrap, #HJwrap, #Rwrap, #Valwrap, #Kwrap, #Vwrap, #Awrap, #Swrap, #Ywrap, #Pwrap, #Iwrap, #Wwrap, #Canwrap, #Hwrap, #Sywrap, #HCwrap, #Jwrap {
+#YXwrap, #HJwrap, #Rwrap, #Valwrap, #Kwrap, #Vwrap, #Awrap, #Swrap, #Ywrap, #Pwrap, #Iwrap, #Wwrap, #Canwrap, #Hwrap, #Sywrap, #HCwrap, #Jwrap, #i94, #CPT {
     width: auto;
     margin-bottom: -10px;
     display: inline-block;
@@ -118,11 +123,13 @@ a {
     position: absolute;
     visibility: hidden;
     font-size: 22px;
-    color: red;
+    color: blue;
     background: white;
     line-height: 1em;
     padding: 14px;
     border-radius: 5px;
+    width: 250px;
+    line-height: 1.4em;
 }
 
 #YXwrap:hover .text,
@@ -141,8 +148,10 @@ a {
 #Hwrap:hover .text,
 #Sywrap:hover .text,
 #HCwrap:hover .text,
-#Jwrap:hover .text
-{
+#Jwrap:hover .text,
+#i94:hover .text,
+#CPT:hover .text
+{   
     visibility: visible;
 }
 
@@ -304,4 +313,9 @@ img {
 
 #microphone {
     width: 70px;
+}
+
+#formresize {
+    width: 45px;
+    height: 50px;
 }

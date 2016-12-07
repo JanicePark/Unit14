@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="jquery-3.1.1.js">
+
+
     </script>
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <script src="https://use.typekit.net/avc8mam.js"></script>
@@ -17,6 +19,7 @@
                 async: true
             });
         } catch (e) {}
+
     </script>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -28,8 +31,7 @@
 
 
 </header>
-
-
+    
 <div id="background1"></div>
 
 <div class="bottombar">
@@ -47,6 +49,12 @@
     </a>
 </div>
 
+        <a href = zone1.html>
+<div class="nextbar">
+    <h2 class="next">N E X T</h2>
+</div>
+    </a>
+
 <div class="narrativebox">
 
     <div id="zone1narrative">
@@ -56,43 +64,6 @@
     </div>
 
 </div>
-
-<div class="penname"></div>
-
-<script type="text/javascript">
-    $(function() {
-        $("#dialog").dialog({
-            modal: true,
-            autoOpen: false,
-            title: "jQuery Dialog",
-            width: 540,
-            height: 360
-        });
-        $("#btnShow").click(function() {
-            $('#dialog').dialog('open');
-        });
-    });
-</script>
-
-<script type="text/javascript">
-    $(function() {
-        $("#dialog").dialog({
-            modal: true,
-            autoOpen: false,
-            title: "Advice from Yuexin:",
-        });
-
-        $(".resize").click(function() {
-            $('#dialog').dialog('open');
-            $("#videoYX").trigger("play");
-        });
-
-        $("button").click(function() {
-            $("#videoYX").trigger("pause");
-        });
-
-    })
-</script>
 
 
 </body>
