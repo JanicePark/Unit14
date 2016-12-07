@@ -113,7 +113,7 @@ ul{
 }
 */
 
-#YXwrap, #HJwrap, #Rwrap, #Valwrap, #Kwrap, #Vwrap, #Awrap, #Swrap, #Ywrap, #Pwrap, #Iwrap, #Wwrap, #Canwrap, #Hwrap, #Sywrap, #HCwrap, #Jwrap, #i94, #CPT {
+#YXwrap, #HJwrap, #Rwrap, #Valwrap, #Kwrap, #Vwrap, #Awrap, #Swrap, #Ywrap, #Pwrap, #Iwrap, #Wwrap, #Canwrap, #Hwrap, #Sywrap, #HCwrap, #Jwrap, #i94, #CPT, #OPT, #TIwrap, #GKwrap, #JKwrap, #GKwrap2, #Map, #JKwrap2 {
     width: auto;
     margin-bottom: -10px;
     display: inline-block;
@@ -149,8 +149,11 @@ ul{
 #Sywrap:hover .text,
 #HCwrap:hover .text,
 #Jwrap:hover .text,
-#i94:hover .text,
-#CPT:hover .text
+#i94:hover .text, #map:hover .text,
+#CPT:hover .text,#OPT:hover .text,
+#TIwrap:hover .text,
+#GKwrap:hover .text,#GKwrap2:hover .text,
+#JKwrap:hover .text,#JKwrap2:hover .text
 {   
     visibility: visible;
 }
@@ -247,6 +250,7 @@ img {
 
 #bus {
     width: 70px;
+    height: 50px;
 }
 
 
@@ -318,4 +322,9 @@ img {
 #formresize {
     width: 45px;
     height: 50px;
+}
+
+#house {
+    width: 55px;
+    height: 55px;
 }

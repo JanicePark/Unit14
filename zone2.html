@@ -66,44 +66,70 @@
     <div id="zone1narrative">
 
         Americans will casually greet you and ask, “How are you doing?” A good way to respond would be with “fine”, “great”, “I’m good, how are you?” or “Very well, thank you!”
-
-        <div class="wrapper">
+        
+        <div id="TIwrap">
             <img src="icons/hand.gif" class="resize">
-            <p class="text"> Tasnima and Ingrid | Graphic Design</p>
+            <div class="text">Ingrid and Tasnima </div>
         </div>
 
-        Sometimes you shake hands with someone you meet for the first time. Don’t be offended when people say, “See you later,” even though you may end up never seeing them again—it’s just an expression. We usually don’t hug people either when we greet each other for the first time; maybe after spending a few hours together, you can give a casual hug. In class, teachers will encourage you to speak up in critique or volunteer for demonstrations. Class participation is a huge part of American education.
+        <div id="TIdialog" title="TI" style="display: none" align="center">
+            <video id="TIvideo" width="500" height="300" controls>
+        <source src="_____">
+        </video>
+        </div>
 
-        <div class="wrapper">
-            <img src="icons/pushpin.png" class="resizegif">
-            <p class="text">Kendra and Joseph | Graphic Design</p>
+        Sometimes you shake hands with someone you meet for the first time.
+                <div id="GKwrap">
+            <img src="icons/zone2/mouth.gif" class="resize">
+            <div class="text">Greta and Kirthank </div>
+        </div>
+
+        <div id="GKdialog" title="JK" style="display: none" align="center">
+            <video id="GKvideo" width="500" height="300" controls>
+        <source src="_____">
+        </video>
+        </div>
+        
+        Don’t be offended when people say, “See you later,” even though you may end up never seeing them again - take it as an expression. Usually, people won't hug eachother when meeting for the first time. Maybe after spending a few hours together, you can give a casual hug. In class, teachers will encourage you to speak up in critique or volunteer for demonstrations. Class participation is usually stressed upon in class.
+
+        <div id="JKwrap">
+            <img src="icons/zone2/pushpin.gif" class="resize">
+            <div class="text">Joseph and Kendra </div>
+        </div>
+
+        <div id="JKdialog" title="JK" style="display: none" align="center">
+            <video id="JKvideo" width="500" height="300" controls>
+        <source src="video/Zone2/kxjoecritique.mp4">
+        </video>
         </div>
 
         This may be difficult at first, but practice makes perfect, and it will get easier as you become more familiar with your peers.
 
-        <div class="wrapper">
-            <img src="icons/megaphone.jpg" id="megaphone">
-            <p class="text">Greta, U.S. | Kirthank, Japan</p>
+                        <div id="GKwrap2">
+            <img src="icons/zone2/megaphone.gif" class="resize">
+            <div class="text">Greta and Kirthank </div>
         </div>
-        <div id="makingfriends" title="Greta and Kirthank" style="display: none" align="center">
-            <video id="videogk" width="500" height="300" controls>
-        <source src="video/yuexin.mp4" type="video/mp4">
+
+        <div id="GKdialog2" title="JK" style="display: none" align="center">
+            <video id="GKvideo2" width="500" height="300" controls> 
+        <source src="video/Zone2/gkmakingfriends.mp4">
         </video>
         </div>
-        <!--
-        <div id="makingfriends" title="Greta and Kirthank" style="display: none" align="center">
-            <video id="KGmakingfriends" width="500" height="300" src="video/Zone%25202/GK%20-%20Making%20Friends.mov" controls>
-        </video>
-        </div>
--->
 
     </div>
+    
     <div id="zone2narrative">
-        Since the US is so diverse, people from different regions have distinct accents and customs
+        <span style="font-family: sans-serif; font-size: 40px">Since </span> the US is so diverse, people from different regions have distinct accents and customs
 
-        <div class="wrapper">
-            <img src="icons/lips.png" class="resizegif">
-            <p class="text">Kendra and Joseph | Graphic Design</p>
+       <div id="JKwrap2">
+            <img src="icons/zone2/mouth.gif" class="resize">
+            <div class="text">Joseph and Kendra </div>
+        </div>
+
+        <div id="JKdialog2" title="JK" style="display: none" align="center">
+            <video id="JKvideo2" width="500" height="300" controls>
+        <source src="video/Zone2/kxjoehut.mp4">
+        </video>
         </div>
 
         Students are driven by their own goals and enjoy a wide range of activities.
@@ -156,24 +182,92 @@
 
 <script type="text/javascript">
     $(function() {
-        $("#makingfriends").dialog({
+               $("#TIdialog").dialog({
             modal: true,
             autoOpen: false,
-            title: "Greta and Kirthank:",
+            title: "Conversation between Ingrid & Tasnima",
             width: 540,
-            height: 360
+            height: 360,
+        });
+        
+        $("#GKdialog").dialog({
+            modal: true,
+            autoOpen: false,
+            title: "Conversation between Greta and Kirthank",
+            width: 540,
+            height: 360,
+        });
+        
+                $("#JKdialog").dialog({
+            modal: true,
+            autoOpen: false,
+            title: "Conversation between Joseph and Kendra",
+            width: 540,
+            height: 360,
+        });
+        
+        $("#GKdialog2").dialog({
+            modal: true,
+            autoOpen: false,
+            title: "Conversation between Greta and Kirthank",
+            width: 540,
+            height: 360,
+        });
+        
+         $("#JKdialog2").dialog({
+            modal: true,
+            autoOpen: false,
+            title: "Conversation between Joseph and Kendra",
+            width: 540,
+            height: 360,
         });
 
-        $("#megaphone").click(function() {
-            $('#makingfriends').dialog('open');
-            $('#videogk').trigger("play");
+        $("#TIwrap").click(function() {
+            $("#TIdialog").dialog("open");
+            $("#TIvideo").trigger("play");
         });
 
         $("button").click(function() {
-            $('#videogk').trigger("pause");
+            $("#TIvideo").trigger("pause");
         });
 
-    })
+        $("#JKwrap").click(function() {
+            $("#JKdialog").dialog("open");
+            $("#JKvideo").trigger("play");
+        });
+
+        $("button").click(function() {
+            $("#JKvideo").trigger("pause");
+        });
+        
+        $("#GKwrap").click(function() {
+            $("#GKdialog").dialog("open");
+            $("#GKvideo").trigger("play");
+        });
+
+        $("button").click(function() {
+            $("#GKvideo").trigger("pause");
+        });
+        
+                $("#GKwrap2").click(function() {
+            $("#GKdialog2").dialog("open");
+            $("#GKvideo2").trigger("play");
+        });
+
+        $("button").click(function() {
+            $("#GKvideo2").trigger("pause");
+        });
+        
+                $("#JKwrap2").click(function() {
+            $("#JKdialog2").dialog("open");
+            $("#JKvideo2").trigger("play");
+        });
+
+        $("button").click(function() {
+            $("#JKvideo2").trigger("pause");
+        });
+
+    });
 
 </script>
 
