@@ -108,9 +108,7 @@ a {
 }
 */
 
-#YXwrap,
-#HJwrap,
-#Rwrap {
+#YXwrap, #HJwrap, #Rwrap, #Valwrap, #Kwrap, #Vwrap, #Awrap, #Swrap, #Ywrap, #Pwrap, #Iwrap, #Wwrap, #Canwrap, #Hwrap, #Sywrap, #HCwrap, #Jwrap {
     width: auto;
     margin-bottom: -10px;
     display: inline-block;
@@ -129,7 +127,22 @@ a {
 
 #YXwrap:hover .text,
 #HJwrap:hover .text,
-#Rwrap:hover .text {
+#Rwrap:hover .text,
+#Valwrap:hover .text,
+#Kwrap:hover .text,
+#Vwrap:hover .text,
+#Awrap:hover .text,
+#Swrap:hover .text,
+#Ywrap:hover .text,
+#Pwrap:hover .text,
+#Iwrap:hover .text,
+#Wwrap:hover .text,
+#Canwrap:hover .text,
+#Hwrap:hover .text,
+#Sywrap:hover .text,
+#HCwrap:hover .text,
+#Jwrap:hover .text
+{
     visibility: visible;
 }
 
@@ -170,7 +183,7 @@ img {
 }
 
 #zone2narrative {
-    padding-top: 10px;
+    padding-top: 80px;
     padding-left: 50px;
     padding-right: 50px;
     font-family: "Merriweather", serif;
