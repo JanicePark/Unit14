@@ -15,7 +15,7 @@ a {
     color: white;
 }
 
-ul{
+ul {
     padding-right: 220px;
     padding-left: 100px;
 }
@@ -113,7 +113,37 @@ ul{
 }
 */
 
-#YXwrap, #HJwrap, #Rwrap, #Valwrap, #Kwrap, #Vwrap, #Awrap, #Swrap, #Ywrap, #Pwrap, #Iwrap, #Wwrap, #Canwrap, #Hwrap, #Sywrap, #HCwrap, #Jwrap, #i94, #CPT, #OPT, #TIwrap, #GKwrap, #JKwrap, #GKwrap2, #Map, #JKwrap2 {
+#YXwrap,
+#HJwrap,
+#Rwrap,
+#Valwrap,
+#Kwrap,
+#Vwrap,
+#Awrap,
+#Swrap,
+#Ywrap,
+#Pwrap,
+#Iwrap,
+#Wwrap,
+#Canwrap,
+#Hwrap,
+#Sywrap,
+#HCwrap,
+#Jwrap,
+#i94,
+#CPT,
+#OPT,
+#TIwrap,
+#TIwrap2,
+#TIwrap3,
+#TIwrap4,
+#GKwrap,
+#JPwrap,
+#JKwrap,
+#JKwrap3,
+#GKwrap2,
+#Map,
+#JKwrap2 {
     width: auto;
     margin-bottom: -10px;
     display: inline-block;
@@ -149,12 +179,20 @@ ul{
 #Sywrap:hover .text,
 #HCwrap:hover .text,
 #Jwrap:hover .text,
-#i94:hover .text, #map:hover .text,
-#CPT:hover .text,#OPT:hover .text,
+#i94:hover .text,
+#map:hover .text,
+#CPT:hover .text,
+#OPT:hover .text,
 #TIwrap:hover .text,
-#GKwrap:hover .text,#GKwrap2:hover .text,
-#JKwrap:hover .text,#JKwrap2:hover .text
-{   
+#TIwrap2:hover .text,
+#TIwrap3:hover .text,
+#TIwrap4:hover .text,
+#GKwrap:hover .text,
+#GKwrap2:hover .text,
+#JKwrap:hover .text,
+#JPwrap:hover .text,
+#JKwrap3:hover .text,
+#JKwrap2:hover .text {
     visibility: visible;
 }
 
