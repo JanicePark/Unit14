@@ -78,6 +78,22 @@
         </div>
 
         This may be difficult at first, but practice makes perfect, and it will get easier as you become more familiar with your peers.
+        
+        <div class="wrapper">
+            <img src="icons/megaphone.jpg" id="megaphone">
+            <p class="text">Greta, U.S. | Kirthank, Japan</p>
+        </div>
+          <div id="makingfriends" title="Greta and Kirthank" style="display: none" align="center">
+            <video id="videogk" width="500" height="300" controls>
+        <source src="video/yuexin.mp4" type="video/mp4">
+        </video>
+        </div>
+<!--
+        <div id="makingfriends" title="Greta and Kirthank" style="display: none" align="center">
+            <video id="KGmakingfriends" width="500" height="300" src="video/Zone%25202/GK%20-%20Making%20Friends.mov" controls>
+        </video>
+        </div>
+-->
 
     </div>
     <div id="zone2narrative">
@@ -122,7 +138,6 @@
             <p class="text">Tasnima and Ingrid | Graphic Design</p>
         </div>
         Approach these with an open mind and understand that everyone has their own reasons for their beliefs, but they are open to hear what others around the world think of them.
-
         <div class="wrapper">
             <img src="icons/heart.png" class="resizegif">
             <p class="text">Kendra and Joseph | Graphic Design</p>
@@ -134,41 +149,29 @@
 
 <div class="penname"></div>
 
+
+<!--Video Dialog Scripts-->  
+    
 <script type="text/javascript">
     $(function() {
-        $("#dialog").dialog({
+        $("#makingfriends").dialog({
             modal: true,
             autoOpen: false,
-            title: "jQuery Dialog",
+            title: "Greta and Kirthank:",
             width: 540,
             height: 360
         });
-        $("#btnShow").click(function() {
-            $('#dialog').dialog('open');
-        });
-    });
 
-</script>
-
-<script type="text/javascript">
-    $(function() {
-        $("#dialog").dialog({
-            modal: true,
-            autoOpen: false,
-            title: "Advice from Yuexin:",
-        });
-
-        $(".resize").click(function() {
-            $('#dialog').dialog('open');
-            $("#videoYX").trigger("play");
+        $("#megaphone").click(function() {
+            $('#makingfriends').dialog('open');
+            $('#videogk').trigger("play");
         });
 
         $("button").click(function() {
-            $("#videoYX").trigger("pause");
+            $('#videogk').trigger("pause");
         });
 
     })
-
 </script>
 
 

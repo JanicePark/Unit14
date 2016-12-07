@@ -199,6 +199,7 @@ img {
     height: auto;
 }
 
+
 .penname {
     font-family: "Merriweather", serif;
     right: 180px;
@@ -224,4 +225,85 @@ img {
 
 ::-webkit-scrollbar { 
     display: none; 
+}
+
+#accountVal {
+    font-family: "skolar sans latin";
+    font-weight: 400;
+}
+
+
+
+/*Zone 1 Icon Styling*/
+
+#bus {
+    width: 70px;
+}
+
+/*Zone 2 Icon Styling*/
+
+#megaphone {
+    width: 70px;
+}
+
+
+
+
+
+/*Zone 3 Icon Styling*/
+
+#blanket {
+    width: 70px;
+}
+
+#juicebox {
+    width: 70px;
+}
+
+#stopsign {
+    width: 70px;
+}
+
+#brokenheart {
+    width: 70px;
+}
+
+#TV {
+    width: 70px;
+}
+
+#flower {
+    width: 65px;
+}
+
+#wall {
+    width: 70px;
+}
+
+#conversation {
+    width: 95px;
+}
+
+#thermometer {
+    width: 70px;
+}
+
+#night {
+    width: 70px;
+}
+
+#hammer {
+    width: 70px;
+}
+
+#alarm {
+    width: 70px;
+}
+
+#telephone {
+    width: 70px;
+}
+
+#microphone {
+    width: 70px;
 }

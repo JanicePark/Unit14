@@ -62,7 +62,7 @@
 
         Welcome to the US! You have had a long flight. There are several ways to reach Providence, RI from your airport. You can take the Amtrak train, or buses like Peter Pan and Greyhound, or RIPTA bus routes 14 and 20. The bus trip usually takes about 90 minutes.
         <div class="wrapper">
-            <img src="icons/bus.gif" class="resize">
+            <img src="icons/bus.gif" id="bus">
             <p class="text">Yuexin, China | Graphic Design</p>
         </div>
         <div id="dialog" title="Yuexin, China" style="display: none" align="center">
@@ -117,7 +117,7 @@
             title: "Advice from Yuexin:",
         });
 
-        $(".resize").click(function() {
+        $("#bus").click(function() {
             $('#dialog').dialog('open');
             $("#videoYX").trigger("play");
         });
